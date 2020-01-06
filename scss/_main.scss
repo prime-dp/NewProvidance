@@ -1,0 +1,338 @@
+.title-section {
+  padding: 200px 0 460px;
+  background-image: url(../img/banner_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title-section-phone {
+  bottom: -300px;
+}
+
+.main-description-wrap {
+  padding: 100px 0;
+  border-bottom: 1px solid #f4f4f4;
+  .lnr {
+    font-size: 50px;
+    color: $buttons-bg-color;
+  }
+}
+
+.main-description {
+  padding: 0 36px;
+  .paragraph-text {
+    font-size: 1.125rem;
+  }
+}
+
+.main-description-title {
+  padding: 45px 0;
+}
+
+.protect-section {
+  overflow: hidden;
+  padding: 250px 0 250px;
+  .paragraph-text {
+    margin: 70px 0;
+  }
+}
+
+.phone-image-wrap {
+
+}
+
+.phone-image {
+  right: 0;
+}
+
+.map-section {
+  padding: 100px 0 150px;
+  overflow: hidden;
+  .paragraph-text {
+    margin: 60px 0;
+  }
+}
+
+.map-image {
+  left: 0;
+  top: 0;
+  padding-left: 90px;
+}
+
+.about-button {
+  background-color: transparent;
+  border: 1px solid $form-border-color;
+}
+
+.hack-button {
+  margin-right: 20px;
+  .fa {
+    margin-left: 50px;
+    font-size: 11px;
+  }
+}
+
+.form-group {
+  margin: 0;
+}
+
+.app-presentation-wrap {
+  background-color: $paragraphs-bg-color;
+  padding: 144px 0 132px;
+  .btn-dark {
+    margin-top: 22px;
+  }
+  .email-input {
+    max-width: 500px;
+  }
+  .email-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 46px 0 66px;
+  }
+}
+
+.email-input {
+  padding: 12px 205px 14px 30px;
+  max-width: 560px;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid $form-border-color;
+  transition: $hover-transition;
+  &:focus {
+    transition: $hover-transition;
+    outline: none;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.2);
+    border-radius: 50px;
+  }
+  &::placeholder {
+    opacity: .5;
+  }
+}
+.email-form {
+  width: 100%;
+  max-width: 560px;
+  .btn-green {
+    text-align: center;
+    transition: $hover-transition;
+    padding: 0 30px;
+    right: 0;
+    height: calc(100% - 8px);
+    align-items: center;
+    background-color: $input-button-color;
+    margin: 4px;
+    border-radius: 50px;
+    z-index: 21;
+    position: relative;
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: $input-button-color-hover;
+    }
+    .fa {
+      margin-left: 18px;
+    }
+  }
+}
+
+.invalid-mail, .empty-mail {
+  .btn-green {
+    background-color: rgb(255, 86, 79);
+    color: transparent;
+    pointer-events: none;
+
+    &:after {
+      text-shadow: none;
+      top: 0;
+      left: 0;
+      color: $white;
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      content: 'Invalid mail';
+      position: absolute;
+    }
+  }
+  .email-input {
+    box-shadow: 0 0 12px 0 rgb(255, 86, 79);
+  }
+}
+
+.empty-mail {
+  .btn-green {
+    &:after {
+      content: 'Fill the form';
+    }
+  }
+}
+
+.app-presentation-title {
+  display: block;
+  position: relative;
+  margin-bottom: 70px;
+  &:after {
+    margin-top: 30px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: $buttons-bg-color;
+    transform: translate(-50%);
+    left: 50%;
+  }
+}
+
+.app-presentation-subtitle {
+  margin: 65px 0 30px;
+}
+
+.interface-images-wrap {
+  margin: 40px 0 80px;
+}
+
+.interface-image {
+  margin: 0 10px;
+  box-shadow: 10px 10px 16px 0 rgba(61, 61, 62, 0.15);
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.toggle-wrap {
+  border: $form-border ;
+}
+
+.toggle-item {
+  padding: 18px 30px;
+}
+
+.toggle-title {
+  padding: 66px 0 20px;
+}
+
+.plan-selection {
+  padding: 206px 0 120px;
+  background-color: $paragraphs-bg-color;
+  .subtitles-small {
+    margin-top: 40px;
+  }
+}
+
+.subscribe-section {
+  padding: 90px 0 86px;
+  border-bottom: 1px solid #f4f4f4;
+  .email-form {
+    margin: 50px 22px;
+  }
+}
+
+.btn-dark {
+  background-color: $black;
+  display: inline-flex;
+  padding: 13px 30px;
+  align-items: center;
+  border-radius: 60px;
+  .fa {
+    font-size: 28px;
+    margin-right: 16px;
+  }
+}
+
+.partners {
+  margin-top: 30px;
+}
+
+.partners-item {
+  display: block;
+  &:first-of-type {
+    margin-right: 30px;
+  }
+}
+
+.watch-video-button {
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: transparent;
+  border: 1px solid $form-border-color;
+  color: $links-main-text-color;
+  margin: 60px 0;
+  .fa {
+    margin-right: 15px;
+  }
+}
+
+.price-wrap {
+
+  .price-card-item {
+    padding: 60px 0;
+    background-color: $price-card-bg-color;
+    border-radius: 10px;
+    transform: scale(.9);
+    transition: $hover-transition;
+    text-align: center;
+    box-shadow: inset 0 0 20px rgba(92, 95, 101,.1);
+  }
+
+  .starter {
+    margin-right: -15px;
+  }
+  .pro {
+    margin-left: -15px;
+  }
+  .active {
+    background-color: $white;
+    margin: 0 0;
+    transform: scale(1);
+    transition: $hover-transition;
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(92, 95, 101,.3);
+    .price-card-button {
+      color: $white;
+      background-color: $buttons-bg-color;
+      pointer-events: initial;
+      &:hover {
+        background-color: #2476c9;
+      }
+    }
+  }
+  .cost {
+    padding: 10px 18px;
+    margin: 30px 56px;
+    border: 1px solid rgba(38, 39, 45, .2);
+    display: inline-block;
+    line-height: 1;
+    border-radius: 35px
+  }
+
+  .conditions-wrap {
+    height: 100px;
+    margin: 50px 0;
+    .fa {
+      margin-right: 10px;
+      color: $input-button-color;
+    }
+  }
+
+
+
+  .price-card-button {
+    border: 1px solid $buttons-bg-color;
+    background-color: transparent;
+    color: $buttons-bg-color;
+    justify-content: center;
+    width: 212px;
+    padding: 15px 0;
+    pointer-events: none;
+    margin: 0 64px;
+  }
+}
+
+.reviews-section {
+  padding: 130px 0 130px;
+}

@@ -1,0 +1,125 @@
+.toggle-container {
+  margin-bottom: 70px;
+
+}
+
+.switch-toggles.active:after {
+  left: 135px;
+}
+
+.switch-toggles {
+  position: relative;
+  width: 262px;
+  height: 50px;
+  border: 1px solid rgba(38, 39, 45, .2);
+  border-radius: 30px;
+  transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+  &:after {
+    position: absolute;
+    content: "";
+    width: 122px;
+    height: 42px;
+    background: #ffffff;
+    left: 3px;
+    top: 3px;
+    border-radius: 30px;
+    box-shadow: 3px 7px 32px -13px rgba(0,0,0,.5);
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+  }
+  .active {
+    color: $links-main-text-color;
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    transform: scale(1);
+  }
+}
+
+.individual, .company {
+  position: relative;
+  width: 130px;
+  float: left;
+  padding: 13px 10px;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 16px;
+  color: #8c8f94;
+  transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+  margin-top: 0;
+  transform: scale(.8);
+  .active {
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    margin-top: 80px;
+    color: #26272d;
+    transform: scale(1);
+    opacity: 1;
+    .price-table {
+      display: block;
+    }
+  }
+}
+
+.price-wrap {
+
+  .price-card-item {
+    padding: 60px 0;
+    background-color: $price-card-bg-color;
+    border-radius: 10px;
+    transform: scale(.9);
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    text-align: center;
+    box-shadow: 0 0 0 rgba(92, 95, 101,.5);
+  }
+
+  .starter {
+    margin-right: -15px;
+  }
+  .pro {
+    margin-left: -15px;
+  }
+  .active {
+    background-color: $white;
+    margin: 0 0;
+    transform: scale(1);
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(92, 95, 101,.3);
+    .price-card-button {
+      color: $white;
+      background-color: $buttons-bg-color;
+      pointer-events: initial;
+      &:hover {
+        background-color: #2476c9;
+      }
+    }
+  }
+  .cost {
+    padding: 10px 18px;
+    margin: 30px 56px;
+    border: 1px solid rgba(38, 39, 45, .2);
+    display: inline-block;
+    line-height: 1;
+    border-radius: 35px
+  }
+
+  .conditions-wrap {
+    height: 100px;
+    margin: 50px 0;
+    .fa {
+      margin-right: 10px;
+      color: $input-button-color;
+    }
+  }
+
+
+
+  .price-card-button {
+    border: 1px solid $buttons-bg-color;
+    background-color: transparent;
+    color: $buttons-bg-color;
+    justify-content: center;
+    width: 212px;
+    padding: 15px 0;
+    pointer-events: none;
+    margin: 0 64px;
+  }
+}

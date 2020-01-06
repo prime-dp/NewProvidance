@@ -1,0 +1,153 @@
+html {
+  font-size: 16px;
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-bottom: 0;
+  line-height: 1;
+  color: $links-main-text-color;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: $links-main-text-color;
+  transition: $hover-transition;
+  &:hover {
+    color: $paragraphs-text-color;
+    transition: $hover-transition;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.paragraph-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: $paragraphs-text-color;
+}
+
+.footer-links-block {
+  li {
+    display: flex;
+    padding-top: 20px;
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+  .footer-link-item {
+    color: $paragraphs-text-color;
+  }
+}
+
+
+.buttons {
+  font-size: 1rem;
+  color: $buttons-text-color;
+  &:hover {
+    text-shadow: 0px 0px 5px $white;
+  }
+}
+
+.about-button {
+  color: $links-main-text-color;
+
+}
+
+.subtitles-small {
+  color: $paragraphs-text-color;
+}
+
+.section-subtitles, .section-subtitles * {
+  text-transform: uppercase;
+  line-height: 22px;
+  font-size: .75rem;
+  letter-spacing: 1.2px;
+  color: $links-main-text-color;
+  font-weight: 700;
+}
+
+.app-presentation-wrap {
+  .section-subtitles {
+    color: $paragraphs-text-color;
+  }
+}
+
+.main-description-title {
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
+.paragraph-title {
+  font-size: 2.625rem;
+}
+
+.main-title-text {
+  font-size: 3.875rem;
+}
+
+.paragraph-title, .main-title-text {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.app-presentation-subtitle {
+  color: $paragraphs-text-color;
+}
+
+.price-card-title {
+  font-size: 2rem;
+}
+
+.cost {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.conditions-item {
+  color: #26292c;
+}
+
+.btn-dark {
+  line-height: 1;
+  transition: $hover-transition;
+  span {
+    font-size: .75rem;
+    span {
+      font-size: 1.4375rem;
+    }
+  }
+  &:hover {
+    text-shadow: 0 0 5px $white;
+  }
+}
+
+.btn-green {
+  color: $white;
+  &:hover {
+    color: $white;
+    text-shadow: 0 0 5px $white;
+  }
+}
+
+.plan-selection {
+  .subtitles-small {
+    a {
+      color: #007bff;
+      text-decoration: underline;
+    }
+  }
+}

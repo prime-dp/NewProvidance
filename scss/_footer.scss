@@ -1,0 +1,28 @@
+.footer-wrap {
+  padding: 90px 0 40px;
+  .btn-dark {
+    margin: 32px 0 40px;
+    border-radius: 10px;
+    padding: 6px 10px;
+  }
+}
+
+.footer-link-item {
+  &:hover {
+    color: $links-main-text-color;
+  }
+}
+
+.social-list-item {
+  margin-right: 26px;
+  font-size: 18px;
+  line-height: 1;
+  color: $paragraphs-text-color;
+  &:hover {
+    color: $links-main-text-color;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 34px;
+}

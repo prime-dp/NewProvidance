@@ -1,0 +1,57 @@
+.carousel-item {
+  text-align: center;
+  .price-card-title {
+    margin: 70px 0 50px;
+  }
+}
+
+.carousel-indicator-item-wrap {
+  width: 130px;
+  height: 130px;
+
+  .carousel-indicator-item {
+    opacity: .5;
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    transform: scale(.7);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+.carousel-indicators {
+  margin: 0;
+  position: static;
+  .active .carousel-indicator-item {
+    box-shadow: 0 10px 25px rgba(92, 95, 101,.6);
+    opacity: 1;
+    transition: all .7s cubic-bezier(0.545, 0, 0.05, 1);
+    transform: scale(1);
+  }
+}
+
+.rating {
+  margin: 30px 68px;
+  .fa {
+    color: #f2bc3b;
+    font-size: 23px;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 35px;
+  width: auto;
+  bottom: auto;
+  .fa {
+    color: $links-main-text-color;
+    font-size: 50px;
+  }
+}
+
+.carousel-control-prev {
+  left: -80px;
+}
+
+.carousel-control-next {
+  right: -80px;
+}
